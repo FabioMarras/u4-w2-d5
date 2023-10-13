@@ -142,9 +142,9 @@ public class ApplicationMain {
                         periodicità = "Semestrale";
                         break;
                     default:
-                        System.err.println("Non hai inserito un opzione valida, riprova");
+                        System.err.println("Non hai inserito un opzione valida, non avrai la periodicità");
+                        break;
                 }
-
                 Riviste nuovo2 = new Riviste(title, year, page, periodicità);
                 System.out.println("HAI INSERITO: " + nuovo2);
                 riviste.add(nuovo2);
@@ -227,6 +227,6 @@ public class ApplicationMain {
                 }
             }
         }
-
+input.close();
     }
 }

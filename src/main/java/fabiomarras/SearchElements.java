@@ -34,7 +34,7 @@ public class SearchElements {
     }
     public static void ricercaPerIsbnRivista (List<Riviste> riviste, int isbnUtente) {
         Predicate<Riviste> categoryISBN = rivista -> rivista.getCodISBN() == isbnUtente;
-        List<Riviste> rivistaIsbn=  riviste.stream().filter(categoryISBN).collect(Collectors.toList());
+        List<Riviste> rivistaIsbn=  riviste.stream().filter(categoryISBN).toList();
         if (rivistaIsbn.isEmpty()) {
             System.err.println("Mi dispiace non abbiamo riviste con ISBN: " + isbnUtente);
         } else {
@@ -43,9 +43,9 @@ public class SearchElements {
     }
     public static void ricercaPerAnnoRivista(List<Riviste> riviste, int anno) {
         Predicate<Riviste> categoryAnno = rivista -> rivista.getYear() == anno;
-        List<Riviste> rivistaAnno = riviste.stream().filter(categoryAnno).collect(Collectors.toList());
+        List<Riviste> rivistaAnno = riviste.stream().filter(categoryAnno).toList();
         if (rivistaAnno.isEmpty()) {
-            System.err.println("Mi dispiace non abbiamo libri del " + anno);
+            System.err.println("Mi dispiace non abbiamo riviste del " + anno);
         } else {
             rivistaAnno.forEach(System.out::println);
         }
