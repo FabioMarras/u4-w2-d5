@@ -1,21 +1,21 @@
-Libro: A Many-Splendoured Thing  Anno: 2008 Pagine: 11 Autore: Romeo Martini
-Libro: Everything is Illuminated  Anno: 2017 Pagine: 8 Autore: Soriana De rosa
-Libro: The Doors of Perception  Anno: 2005 Pagine: 35 Autore: Ninfa Messina
-Libro: O Pioneers!  Anno: 2014 Pagine: 56 Autore: Concetta D'angelo
-Libro: Everything is Illuminated  Anno: 2000 Pagine: 46 Autore: Pietro Gentile
-Libro: Let Us Now Praise Famous Men  Anno: 2017 Pagine: 50 Autore: Caligola Barone
-Libro: That Hideous Strength  Anno: 2007 Pagine: 33 Autore: Dr. Eufemia Moretti
-Libro: Postern of Fate  Anno: 2015 Pagine: 87 Autore: Vienna Villa
-Libro: Arms and the Man  Anno: 2021 Pagine: 27 Autore: Ing. Ubaldo Costantin
-Libro: Everything is Illuminated  Anno: 2018 Pagine: 53 Autore: Lucrezia Romano
-Rivista: omnis  Anno: 2006 Pagine: 41 Periodicità: Semestrale
-Rivista: id  Anno: 2016 Pagine: 95 Periodicità: Semestrale
-Rivista: quaerat  Anno: 2006 Pagine: 75 Periodicità: Mensile
-Rivista: dicta  Anno: 2002 Pagine: 39 Periodicità: Mensile
-Rivista: magni  Anno: 2015 Pagine: 60 Periodicità: Mensile
-Rivista: ut  Anno: 2022 Pagine: 83 Periodicità: Semestrale
-Rivista: nulla  Anno: 2020 Pagine: 51 Periodicità: Settimanale
-Rivista: est  Anno: 2015 Pagine: 12 Periodicità: Mensile
-Rivista: sed  Anno: 2006 Pagine: 18 Periodicità: Settimanale
-Rivista: autem  Anno: 2013 Pagine: 52 Periodicità: Settimanale
+Libro: The House of Mirth  Anno: 2001 Pagine: 6 Autore: Sig. Lino Gentile
+Libro: An Instant In The Wind  Anno: 2020 Pagine: 98 Autore: Dott. Omar Ferri
+Libro: Vanity Fair  Anno: 2003 Pagine: 42 Autore: Marcella Caputo
+Libro: The World, the Flesh and the Devil  Anno: 2014 Pagine: 20 Autore: Leone Barone
+Libro: For Whom the Bell Tolls  Anno: 2006 Pagine: 8 Autore: Maria Palmieri
+Libro: Many Waters  Anno: 2008 Pagine: 86 Autore: Gioacchino Ricci
+Libro: Time To Murder And Create  Anno: 2000 Pagine: 95 Autore: Gavino Mancini
+Libro: The Painted Veil  Anno: 2023 Pagine: 38 Autore: Amerigo Palumbo
+Libro: Far From the Madding Crowd  Anno: 2011 Pagine: 40 Autore: Sig. Walter Martini
+Libro: A Scanner Darkly  Anno: 2010 Pagine: 9 Autore: Ausonio Leone
+Rivista: aliquid  Anno: 2016 Pagine: 72 Periodicità: Mensile
+Rivista: nesciunt  Anno: 2019 Pagine: 97 Periodicità: Settimanale
+Rivista: fugiat  Anno: 2005 Pagine: 60 Periodicità: Semestrale
+Rivista: officia  Anno: 2011 Pagine: 56 Periodicità: Semestrale
+Rivista: aspernatur  Anno: 2017 Pagine: 72 Periodicità: Semestrale
+Rivista: ut  Anno: 2017 Pagine: 26 Periodicità: Semestrale
+Rivista: magni  Anno: 2013 Pagine: 41 Periodicità: Mensile
+Rivista: consequatur  Anno: 2009 Pagine: 60 Periodicità: Mensile
+Rivista: maiores  Anno: 2011 Pagine: 39 Periodicità: Semestrale
+Rivista: molestias  Anno: 2014 Pagine: 28 Periodicità: Settimanale
 
