@@ -32,4 +32,12 @@ public class Riviste {
                 ", periodicità='" + periodicità + '\'' +
                 '}';
     }
+
+    public int getCodISBN() {
+        return codISBN;
+    }
+
+    public void setCodISBN(int codISBN) {
+        this.codISBN = codISBN;
+    }
 }

@@ -33,4 +33,52 @@ public class Libro {
                 ", type='" + type + '\'' +
                 '}';
     }
+
+    public int getCodISBN() {
+        return codISBN;
+    }
+
+    public void setCodISBN(int codISBN) {
+        this.codISBN = codISBN;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public int getNumPage() {
+        return numPage;
+    }
+
+    public void setNumPage(int numPage) {
+        this.numPage = numPage;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 }
