@@ -1,0 +1,21 @@
+Libro: A Many-Splendoured Thing  Anno: 2008 Pagine: 11 Autore: Romeo Martini
+Libro: Everything is Illuminated  Anno: 2017 Pagine: 8 Autore: Soriana De rosa
+Libro: The Doors of Perception  Anno: 2005 Pagine: 35 Autore: Ninfa Messina
+Libro: O Pioneers!  Anno: 2014 Pagine: 56 Autore: Concetta D'angelo
+Libro: Everything is Illuminated  Anno: 2000 Pagine: 46 Autore: Pietro Gentile
+Libro: Let Us Now Praise Famous Men  Anno: 2017 Pagine: 50 Autore: Caligola Barone
+Libro: That Hideous Strength  Anno: 2007 Pagine: 33 Autore: Dr. Eufemia Moretti
+Libro: Postern of Fate  Anno: 2015 Pagine: 87 Autore: Vienna Villa
+Libro: Arms and the Man  Anno: 2021 Pagine: 27 Autore: Ing. Ubaldo Costantin
+Libro: Everything is Illuminated  Anno: 2018 Pagine: 53 Autore: Lucrezia Romano
+Rivista: omnis  Anno: 2006 Pagine: 41 Periodicità: Semestrale
+Rivista: id  Anno: 2016 Pagine: 95 Periodicità: Semestrale
+Rivista: quaerat  Anno: 2006 Pagine: 75 Periodicità: Mensile
+Rivista: dicta  Anno: 2002 Pagine: 39 Periodicità: Mensile
+Rivista: magni  Anno: 2015 Pagine: 60 Periodicità: Mensile
+Rivista: ut  Anno: 2022 Pagine: 83 Periodicità: Semestrale
+Rivista: nulla  Anno: 2020 Pagine: 51 Periodicità: Settimanale
+Rivista: est  Anno: 2015 Pagine: 12 Periodicità: Mensile
+Rivista: sed  Anno: 2006 Pagine: 18 Periodicità: Settimanale
+Rivista: autem  Anno: 2013 Pagine: 52 Periodicità: Settimanale
+

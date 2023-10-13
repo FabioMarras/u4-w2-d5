@@ -37,7 +37,19 @@ public class Riviste {
         return codISBN;
     }
 
-    public void setCodISBN(int codISBN) {
-        this.codISBN = codISBN;
+    public int getYear() {
+        return year;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getNumPage() {
+        return numPage;
+    }
+
+    public String getPeriodicità() {
+        return periodicità;
     }
 }

@@ -1,7 +1,11 @@
 package fabiomarras;
 
 import com.github.javafaker.Faker;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.function.Supplier;
 
@@ -18,7 +22,7 @@ public class ApplicationMain {
         for (int i = 0; i < 10; i++) {
             libri.add(booksSupplier.get());
         }
-        libri.forEach(System.out::println);
+        //libri.forEach(System.out::println);
 
         //Qui creiamo 100 riviste casuali
         Supplier<Riviste> RivisteSupplier = () -> {
@@ -32,7 +36,31 @@ public class ApplicationMain {
         for (int i = 0; i < 10; i++) {
             riviste.add(RivisteSupplier.get());
         }
-        riviste.forEach(System.out::println);
+        //riviste.forEach(System.out::println);
+
+        //Creiamo archivio
+        List<Object> Archivio = new ArrayList<>();
+        Archivio.add(libri);
+        Archivio.add(riviste);
+        Archivio.forEach(System.out::println);
+
+        //creazione file
+        File file = new File("src/listArchivio.txt");
+        try{
+            StringBuilder ListStringArchivio = new StringBuilder();
+            for (Libro libro : libri) {
+                String listProduct = "Libro: " + libro.getTitle() + "  Anno: " + libro.getYear() + " Pagine: " + libro.getNumPage() + " Autore: " + libro.getAuthor();
+                ListStringArchivio.append(listProduct).append(System.lineSeparator());
+            }
+            for (Riviste Riviste : riviste) {
+                String listProduct = "Rivista: " + Riviste.getTitle() + "  Anno: " + Riviste.getYear() + " Pagine: " + Riviste.getNumPage() + " Periodicità: " + Riviste.getPeriodicità();
+                ListStringArchivio.append(listProduct).append(System.lineSeparator());
+            }
+
+            FileUtils.writeStringToFile(file, ListStringArchivio  + System.lineSeparator(), StandardCharsets.UTF_8);
+        }catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
 
         //Scanner per aggiunta, rimozione e ricerca
         Scanner input = new Scanner(System.in);
@@ -53,13 +81,13 @@ public class ApplicationMain {
             System.out.println("Inserisci il suo genere:");
             String type = input.nextLine();
             nuovo = new Libro(title, year, page, author, type);
-        System.out.println("HAI INSERITO: " + nuovo);
-        libri.add(nuovo);
-        System.out.println("ECCO LA LISTA DEI LIBRI DISPONIBILI AGGIORNATA!");
-        libri.forEach(System.out::println);
+            System.out.println("HAI INSERITO: " + nuovo);
+            libri.add(nuovo);
+            System.out.println("ECCO LA LISTA DEI LIBRI DISPONIBILI AGGIORNATA!");
+            libri.forEach(System.out::println);
 
-        //caso 2, aggiunta rivista
-        } else if ( numero == 2) {
+            //caso 2, aggiunta rivista
+        } else if (numero == 2) {
             System.out.println("Stai aggiungendo una rivista! Inserisci il suo titolo:");
             String title = input.nextLine();
             System.out.println("Inserisci il suo anno:");
@@ -110,8 +138,43 @@ public class ApplicationMain {
             }
 
             //caso 4, ricerca
-        }else if (numero == 4) {
-
+        } else if (numero == 4) {
+            System.out.println("Digita 1 se vuoi cercare un libro, 2 se vuoi cercare una rivista");
+            int scelta1 = Integer.parseInt(input.nextLine());
+            if (scelta1 == 1) {
+                System.out.println("Digita 1 se vuoi cercare per ISBN, digita 2 se vuoi cercare per anno, digita 3 se vuoi cercare per autore ");
+                int scelta = Integer.parseInt(input.nextLine());
+                if (scelta == 1) {
+                    System.out.println("RICERCA PER ISBN:");
+                    int isbn = Integer.parseInt(input.nextLine());
+                    SearchElements.ricercaPerIsbnLibro(libri, isbn);
+                } else if (scelta == 2) {
+                    System.out.println("RICERCA PER ANNO:");
+                    int year = Integer.parseInt(input.nextLine());
+                    SearchElements.ricercaPerAnnoLibro(libri, year);
+                } else if (scelta == 3) {
+                    System.out.println("RICERCA PER autore:");
+                    String author = input.nextLine();
+                    SearchElements.ricercaPerAutoreLibro(libri, author);
+                } else {
+                    System.err.println("Scelta non valida, digita 1 o 2 o 3");
+                }
+            } else if (scelta1 == 2) {
+                System.out.println("Digita 1 se vuoi cercare per ISBN, digita 2 se vuoi cercare per anno ");
+                int scelta = Integer.parseInt(input.nextLine());
+                if (scelta == 1) {
+                    System.out.println("RICERCA PER ISBN:");
+                    int isbn = Integer.parseInt(input.nextLine());
+                    SearchElements.ricercaPerIsbnRivista(riviste, isbn);
+                } else if (scelta == 2) {
+                    System.out.println("RICERCA PER ANNO:");
+                    int year = Integer.parseInt(input.nextLine());
+                    SearchElements.ricercaPerAnnoRivista(riviste, year);
+                } else {
+                    System.err.println("Scelta non valida, digita 1 o 2 ");
+                }
+            }
         }
+
     }
 }
